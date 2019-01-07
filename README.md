@@ -3,7 +3,7 @@ Unity_Demo_跳转到wifi、蓝牙、手柄管理、设置界面
 在demo的场景中点击StartAction按钮跳转到原生蓝牙设置界面。
 
 具体方法：
-
+'''
 string action = "android.settings.BLUETOOTH_SETTINGS";
 
 public void startAction(string action){
@@ -17,7 +17,7 @@ public void startAction(string action){
      joActivity.Call("startActivity", joIntent);  
 	
 }
-
+'''
 
 
 
