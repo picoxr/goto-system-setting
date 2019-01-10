@@ -1,11 +1,11 @@
-###  [ `Return` ](https://github.com/PicoSupport/PicoSupport)
+<p align="right"><a href="https://github.com/PicoSupport/PicoSupport" target="_blank">Pico Support Home</a></p>
 
 ## Unity_Demo_StartAction
 
-## Unity_Versions：
+## Unity Versions：
 - 2017.1.0f3 Or UP
 
-## Explain：
+## Description：
 
 - click "Setting" button in the demo scene to jump to the native 3D Setting interface.
 - click "Bluetooth" button to jump to the native Bluetooth setting interface.
@@ -43,8 +43,8 @@ public void startAction(string action){
 <action android:name="pui.settings.action.CONTROLLER_SETTINGS" />
 ```
 
-## Use：
-- DemoScene： Assets -> Scene -> PicoNeoHandleSwitch
+## Usage：
+- Scene： Assets -> Scene -> PicoNeoHandleSwitch
 - After packaging, use in pico device
 
 ## Announcements：
