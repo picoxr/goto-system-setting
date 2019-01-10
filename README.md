@@ -12,8 +12,9 @@
 - Unity_Demo_在demo的场景中 点击 "Setting" 按钮跳转到 原生3D设置界面。
 - 点击 "Bluetooth" 按钮跳转到 原生蓝牙设置界面。
 - 点击 "WIFI" 按钮跳转到 原生Wifi设置界面。
-- 点击 "Controller" 按钮跳转到 手柄控制界面。
+- 点击 "Controller" 按钮跳转到 手柄管理界面。
 ![demo.pnpg](/Other/Screenshot.png)
+<img src="/Other/Screenshot.png" width="300"/>
 
 ``` C#
 //示例：设置跳转蓝牙
