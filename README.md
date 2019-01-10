@@ -3,7 +3,7 @@
 ## Unity_Demo_StartAction
 
 ## Unity Versions：
-- 2017.1.0f3 Or UP
+- 2017.1.0f3 and later
 
 ## Description：
 
