@@ -13,7 +13,6 @@
 - 点击 "Bluetooth" 按钮跳转到 原生蓝牙设置界面。
 - 点击 "WIFI" 按钮跳转到 原生Wifi设置界面。
 - 点击 "Controller" 按钮跳转到 手柄管理界面。
-![demo.pnpg](/Other/Screenshot.png)
 <img src="/Other/Screenshot.png" width="300"/>
 
 ``` C#
