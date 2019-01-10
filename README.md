@@ -47,7 +47,7 @@ public void startAction(string action){
 
 ## Use 使用：
 - 场景位置： Assets -> Scene -> PicoNeoHandleSwitch
-- 点击按钮 "切换手柄" 切换主副手柄
+- 打包后在pico设备使用
 
 ## Announcements 注意事项：
 - 请注意在AndroidManifest.xml添加权限
