@@ -5,6 +5,7 @@
 
 ## Detail | 内容
 - Unity_Demo_在demo的场景中点击StartAction按钮跳转到原生蓝牙设置界面。
+![demo.jpg](/Other/demo.jpg)
 - Unity_Demo_StartActionBlueTooth_SDK_v2.7.6
 
 
