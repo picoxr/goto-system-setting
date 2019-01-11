@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class StartAction : MonoBehaviour {
 
-    string actionForSettings= "pui.settings.action.SETTINGS";
-    string actionForBluetooth = "android.settings.BLUETOOTH_SETTINGS";
-    string actionForWifi = "android.settings.WIFI_SETTINGS";
+    string actionForSettings = "pui.settings.action.SETTINGS";
+    string actionForBluetooth = "pui.settings.action.BLUETOOTH_SETTINGS";
+    string actionForWifi = "pui.settings.action.WIFI_SETTINGS";
 
-    string actionForController = "android.settings.CONTROLLER_SETTINGS";
+    string actionForController = "pui.settings.action.CONTROLLER_SETTINGS";
     // Use this for initialization
     void Start () {
 
