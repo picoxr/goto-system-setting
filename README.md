@@ -17,6 +17,6 @@
 - Scene： Assets -> Scene -> PicoNeoHandleSwitch
 
 - After packaging, use in pico device
-- Notice that you add permissions on the **AndroidManifest.xml**
+- Note that you add permissions on the **AndroidManifest.xml**
 
 
