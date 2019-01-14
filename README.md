@@ -14,7 +14,7 @@
 <img src="/Other/Screenshot.png" width="300"/>
 
 ## Usage：
-- Scene： Assets -> Scene -> PicoNeoHandleSwitch
+- Scene： Assets -> Scene -> GotoSystemSettingDemo
 
 - After packaging, use in pico device
 - Note that you add permissions on the **AndroidManifest.xml**
