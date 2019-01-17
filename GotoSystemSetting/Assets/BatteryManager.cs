@@ -51,7 +51,7 @@ public class BatteryManager : MonoBehaviour {
         while (true)
         {
             now = DateTime.Now;
-            Time.text += "\n当前系统时间:" + string.Format("{0}:{1}", now.Hour, now.Minute);
+            Time.text += "\ncurrent system time:" + string.Format("{0}:{1}", now.Hour, now.Minute);
             yield return new WaitForSeconds(60f);
         }
     }
