@@ -7,22 +7,12 @@ public class StartAction : MonoBehaviour {
     string actionForSettings = "pui.settings.action.SETTINGS";
     string actionForBluetooth = "pui.settings.action.BLUETOOTH_SETTINGS";
     string actionForWifi = "pui.settings.action.WIFI_SETTINGS";
-
     string actionForController = "pui.settings.action.CONTROLLER_SETTINGS";
-    // Use this for initialization
-    void Start () {
 
-        
-	}
-
-	// Update is called once per frame
-	void Update () {
-
-	}
-	public void startActionSettings()
-	{
-		startToAction(actionForSettings);
-	}
+    public void startActionSettings()
+    {
+	startToAction(actionForSettings);
+    }
     public void startActionBluetooth()
     {
         startToAction(actionForBluetooth);
@@ -35,13 +25,14 @@ public class StartAction : MonoBehaviour {
     {
         startToAction(actionForController);
     }
+	
     private void startToAction(string action)
-	{
-		AndroidJavaClass jcPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-		AndroidJavaObject joActivity = jcPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-		AndroidJavaObject joIntent = new AndroidJavaObject("android.content.Intent", action);
-		joActivity.Call("startActivity", joIntent);
-	}
+    {
+	AndroidJavaClass jcPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+	AndroidJavaObject joActivity = jcPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+	AndroidJavaObject joIntent = new AndroidJavaObject("android.content.Intent", action);
+	joActivity.Call("startActivity", joIntent);
+    }
     
     //Start app in vrshell.
     private void startToAction2(string action)
@@ -51,7 +42,6 @@ public class StartAction : MonoBehaviour {
         AndroidJavaObject joIntent = new AndroidJavaObject("android.content.Intent", "pvr.intent.action.ADAPTER");
         joIntent.Call<AndroidJavaObject>("setPackage", "com.pvr.adapter");
         joIntent.Call<AndroidJavaObject>("putExtra", "way", 2);
-
         joIntent.Call<AndroidJavaObject>("putExtra", "args", new string[] { action });
         joActivity.Call<AndroidJavaObject>("startService", joIntent);
     }
