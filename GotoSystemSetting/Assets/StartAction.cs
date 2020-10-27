@@ -55,4 +55,20 @@ public class StartAction : MonoBehaviour {
         joIntent.Call<AndroidJavaObject>("putExtra", "args", new string[] { action });
         joActivity.Call<AndroidJavaObject>("startService", joIntent);
     }
+	
+    public void gotoFileManager()
+    {
+        gotoPUIApp("com.pvr.filemanager", "com.pvr.filemanager.refactor.view.activity.MainActivity");
+    }
+
+    void gotoPUIApp(string pkgName, string clsName)
+    {
+        AndroidJavaClass jcPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        AndroidJavaObject joActivity = jcPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+        AndroidJavaObject joIntent = new AndroidJavaObject("android.content.Intent", "pvr.intent.action.ADAPTER");
+        joIntent.Call<AndroidJavaObject>("setPackage", "com.pvr.adapter");
+        joIntent.Call<AndroidJavaObject>("putExtra", "way", 0);
+        joIntent.Call<AndroidJavaObject>("putExtra", "args", new string[] { pkgName, clsName });
+        joActivity.Call<AndroidJavaObject>("startService", joIntent);
+    }
 }
