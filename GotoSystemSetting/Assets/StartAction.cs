@@ -25,7 +25,7 @@ public class StartAction : MonoBehaviour {
     {
         startToAction(actionForController);
     }
-	
+
     private void startToAction(string action)
     {
 	AndroidJavaClass jcPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
@@ -34,7 +34,7 @@ public class StartAction : MonoBehaviour {
 	joActivity.Call("startActivity", joIntent);
     }
     
-    //Start app in vrshell.
+    //Start app in vrshell. Use this function if PUI version is 3.11.x and above.
     private void startToAction2(string action)
     {
         AndroidJavaClass jcPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
