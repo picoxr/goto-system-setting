@@ -17,4 +17,5 @@
 - After packaging, use in pico device
 - Note that you add permissions on the **AndroidManifest.xml**
 
-
+## Note:
+- If you have any questions/comments, please raise requests at [**PicoDevSupport Portal**](https://picodevsupport.atlassian.net/servicedesk/customer/user/login?
