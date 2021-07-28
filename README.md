@@ -1,5 +1,7 @@
 ## Unity_Demo_Goto System Setting
 
+- If you have any questions/comments, please visit [**Pico Developer Answers**](https://devanswers.pico-interactive.com/) and raise your question there.
+
 ## Unity Versions：
 - 2017.4 and later
 
@@ -16,6 +18,3 @@
 
 - After packaging, use in pico device
 - Note that you add permissions on the **AndroidManifest.xml**
-
-## Note:
-- If you have any questions/comments, please raise requests at [**PicoDevSupport Portal**](https://picodevsupport.atlassian.net/servicedesk/customer/user/login?
